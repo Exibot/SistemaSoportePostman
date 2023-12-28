@@ -200,7 +200,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:3020/api/usuarios/"
+						"url": "{{Base_URL}}/reportes/2"
 					},
 					"response": []
 				},
@@ -222,7 +222,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:3020/api/reportes/"
+						"url": "{{Base_URL}}/reportes/"
 					},
 					"response": []
 				},
@@ -285,7 +285,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:3020/api/clientes/"
+						"url": "{{Base_URL}}/clientes/"
 					},
 					"response": []
 				},
@@ -307,7 +307,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:3020/api/clientes/"
+						"url": "{{Base_URL}}/clientes/"
 					},
 					"response": []
 				},
@@ -370,7 +370,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:3020/api/estadotickets/"
+						"url": "{{Base_URL}}/estadotickets/"
 					},
 					"response": []
 				},
@@ -455,7 +455,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:3020/api/tickets/"
+						"url": "{{Base_URL}}/tickets/"
 					},
 					"response": []
 				},
