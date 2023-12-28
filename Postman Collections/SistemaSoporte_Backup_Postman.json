@@ -1,0 +1,1323 @@
+{
+	"info": {
+		"_postman_id": "a856883a-7588-4e7e-b119-b730971b5e6c",
+		"name": "SistemaSoporte",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Get All",
+					"id": "a892a942-c3bc-4c64-8869-76eb03c881bb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Base_URL}}/usuarios/"
+					},
+					"response": []
+				},
+				{
+					"name": "New",
+					"id": "974d8b7f-5139-4e9a-9458-84aad8ed0fab",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{Base_URL}}/usuarios/"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"id": "b82b215d-8691-4bb9-8c9a-eed52ce35642",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique Altamirano\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{Base_URL}}/usuarios/6"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"id": "dbfb928d-1980-484e-b45f-5141019ef4fb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{Base_URL}}/usuarios/6"
+					},
+					"response": []
+				}
+			],
+			"id": "0add7fc6-8ac2-4d7d-8f4a-41de5f0c91f3"
+		},
+		{
+			"name": "Tarifas",
+			"item": [
+				{
+					"name": "Get All",
+					"id": "3a575053-8f95-4d4e-978a-827b3826d060",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Base_URL}}/tarifas/"
+					},
+					"response": []
+				},
+				{
+					"name": "New",
+					"id": "504c1b9d-925d-4ade-bf60-295793099bd1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"cliente_id\": 1,\r\n        \"tarifa_uf\": \"0.6\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{Base_URL}}/tarifas/"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"id": "ce3b87d4-1bce-4e64-88c2-aa869fdb75aa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"cliente_id\": 1,\r\n        \"tarifa_uf\": \"0.3\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/tarifas/6"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"id": "8ffddc4b-0c58-483f-8fcc-d5e66dea17aa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/usuarios/6"
+					},
+					"response": []
+				}
+			],
+			"id": "d4e80974-1467-471b-bcbf-e9e1d76f8063"
+		},
+		{
+			"name": "Reportes",
+			"item": [
+				{
+					"name": "Get All",
+					"id": "b5e1c484-4659-4796-b49c-b5927de51a6f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Base_URL}}/reportes/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific",
+					"id": "efe1b42f-d892-4bbb-9c66-a136d2788558",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3020/api/usuarios/"
+					},
+					"response": []
+				},
+				{
+					"name": "New",
+					"id": "81057fd0-2f2a-4a06-894c-6184f595d977",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ticket_id\": 1,\r\n    \"fecha_reporte\": \"2023-12-26T17:09:43.958Z\",\r\n    \"detalles\": \"Se realizo una actualizacion en el computador, se agrego un SSD\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/reportes/"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"id": "ebac3cdc-edb2-4450-a0ef-55f334e71510",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique Altamirano\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/usuarios/6"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"id": "e7f7c483-7b8e-4a9c-9d79-4a42d0293bc6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/usuarios/6"
+					},
+					"response": []
+				}
+			],
+			"id": "e7215f98-c69f-4674-a6a1-05e06af97c54"
+		},
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Get All",
+					"id": "4f2dc800-bc82-41d5-83b3-3c70f664236f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3020/api/clientes/"
+					},
+					"response": []
+				},
+				{
+					"name": "New",
+					"id": "6e6897d1-14d4-4ba5-82f5-b0bf4a5e0b50",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Megabits\",\r\n    \"RUT\": \"762894212121259-9\",\r\n    \"giro\": \"Computacion e informatica\",\r\n    \"telefono\": \"123456789\",\r\n    \"web\": \"https://www.example.com\",\r\n    \"email\": \"cliente1@example.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/clientes/"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"id": "f40bacd3-db23-4b45-b469-9491212e42b2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Megabits\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/clientes/6"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"id": "cf7e9a2c-f228-4928-a02a-dfc1eb48049c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/clientes/7"
+					},
+					"response": []
+				}
+			],
+			"id": "5396a23b-8807-46e5-a263-8ee1f5544589"
+		},
+		{
+			"name": "Estado Tickets",
+			"item": [
+				{
+					"name": "Get All",
+					"id": "4f181969-b79d-4218-aa74-61514595b066",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3020/api/estadotickets/"
+					},
+					"response": []
+				},
+				{
+					"name": "New",
+					"id": "7cc31580-fdd7-4136-9bc0-4734a2da0f9f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Nuevo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/estadotickets/"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"id": "d652097f-e518-4614-b591-a094998d573f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Nuevox\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/estadotickets/6"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"id": "8c3fece2-24e1-4fc0-b1e8-afa05e68d45f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/estadotickets/6"
+					},
+					"response": []
+				}
+			],
+			"id": "04575fd2-df8d-4d26-bc5a-afcbeb054bd1"
+		},
+		{
+			"name": "Tickets",
+			"item": [
+				{
+					"name": "Get All",
+					"id": "13b435b4-802c-454e-bb85-c600f63d19b1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3020/api/tickets/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific",
+					"id": "9ea004ea-4018-4dfb-9c19-d91614395a90",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3020/api/tickets/"
+					},
+					"response": []
+				},
+				{
+					"name": "New",
+					"id": "dc525251-6166-4554-bf47-0f07ec518f6e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cliente_id\": 3,\r\n    \"tecnico_id\": 2,\r\n    \"categoria_id\": 4,\r\n    \"titulo\": \"Atencion por problema de fibra\",\r\n    \"descripcion\": \"Caidas de conexion WAN movistar\",\r\n    \"estado_id\": 1,\r\n    \"fecha_creacion\": \"2023-12-25T03:26:33.309Z\",\r\n    \"fecha_actualizacion\": \"2023-12-26T03:26:33.309Z\",\r\n    \"fecha_inicio\": \"2023-12-25T03:26:33.309Z\",\r\n    \"fecha_fin\": \"2023-12-27T03:41:33.309Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/tickets/"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"id": "e20df61d-8870-4d5c-bb95-12a73e1151f0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Nuevox\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/estadotickets/6"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"id": "8d9b2c8d-af42-437f-8b91-7dab94db87be",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/estadotickets/6"
+					},
+					"response": []
+				}
+			],
+			"id": "adb5a1a0-5ac0-4a9e-a011-cf73e6f18012"
+		},
+		{
+			"name": "Ciudades",
+			"item": [
+				{
+					"name": "Get All",
+					"id": "ea3c4c99-31a1-4db0-a03d-823ce214c21c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3020/api/ciudades/"
+					},
+					"response": []
+				},
+				{
+					"name": "New",
+					"id": "49ccb8c4-0407-4b2d-a5ac-4c43877d55ca",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Punta Arenas\",\r\n    \"pais_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/ciudades/"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"id": "ba5f3eac-8b6a-46f8-8fe6-34956fd0ac54",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique Altamirano\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/ciudades/6"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"id": "e2089f7b-d1b4-4afd-86a9-6d86a1f1b0bc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/ciudades/6"
+					},
+					"response": []
+				}
+			],
+			"id": "665cf8eb-05e4-4c7a-bdba-52969b45bdec"
+		},
+		{
+			"name": "Paises",
+			"item": [
+				{
+					"name": "Get All",
+					"id": "045ebfac-fe1a-4275-ac71-1d6a16b3aad4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3020/api/paises/"
+					},
+					"response": []
+				},
+				{
+					"name": "New",
+					"id": "df31666e-9be0-4793-8d1a-978a71656fe0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Chile\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/paises/"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"id": "8cfd8814-d7ab-4556-92b7-a10afdc9d9ab",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Chile querido\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/paises/6"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"id": "8702372c-89e4-49ff-a5b6-ee963546ced7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/paises/6"
+					},
+					"response": []
+				}
+			],
+			"id": "682ddafc-a43e-49d1-8ec0-7c5892d1e88d"
+		},
+		{
+			"name": "Base Conocimiento",
+			"item": [
+				{
+					"name": "Get All",
+					"id": "b4c15bc7-e056-4122-ad6f-c892b4838611",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3020/api/baseconocimientos/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific",
+					"id": "445eb096-3248-4aeb-8297-31bc74748096",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3020/api/baseconocimientos/2"
+					},
+					"response": []
+				},
+				{
+					"name": "New",
+					"id": "7f4cbce2-6526-4023-a3ea-ee38873b54c2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/usuarios/"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"id": "5e1fc466-6e1d-4c67-a827-a886533b280e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique Altamirano\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/usuarios/6"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"id": "e8c67fd1-95d0-4f02-ba9b-38cc64384eb5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/usuarios/6"
+					},
+					"response": []
+				}
+			],
+			"id": "1172953d-9034-4d39-9884-aa75d3fdf4da"
+		},
+		{
+			"name": "Facturas",
+			"item": [
+				{
+					"name": "Get All",
+					"id": "b5e3fbe9-0a7f-443d-94db-a060abe5210b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3020/api/facturas/"
+					},
+					"response": []
+				},
+				{
+					"name": "New",
+					"id": "a44bdab6-4573-4956-b9d1-c3fc8e7810a8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/facturas/"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"id": "af73a59f-c1cb-420e-8155-600d48028567",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique Altamirano\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/facturas/6"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"id": "770830d3-5b35-46c9-b854-2e5553e5b981",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/facturas/6"
+					},
+					"response": []
+				}
+			],
+			"id": "d3d01811-4953-4f29-9b19-c615266e42c3"
+		},
+		{
+			"name": "Categorias",
+			"item": [
+				{
+					"name": "Get All",
+					"id": "1893f41b-8156-4790-96b7-ea6c35518a5a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3020/api/categorias/"
+					},
+					"response": []
+				},
+				{
+					"name": "New",
+					"id": "268766a9-7080-4827-967e-ce6fb11c108d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Redes\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/categorias/"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"id": "3eb1e072-6521-4b1e-b4df-ee99ceb8eef8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Redes y conectividad\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/usuarios/6"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"id": "f71c1d67-a38f-4ffd-8256-b5a1099479a5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/usuarios/6"
+					},
+					"response": []
+				}
+			],
+			"id": "73a29e4b-e697-4095-bef6-43806840717f"
+		},
+		{
+			"name": "UFS",
+			"item": [
+				{
+					"name": "Get All",
+					"id": "6610985a-fcc7-4a9f-8dd4-284052b00870",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3020/api/categorias/"
+					},
+					"response": []
+				},
+				{
+					"name": "New",
+					"id": "24c6fd8e-9931-4f67-8bd5-2e455926bf80",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dia\": 12,\r\n    \"mes\": 12,\r\n    \"anio\": 2023,\r\n    \"fecha\": \"2023-04-23T18:25:43.511Z\",\r\n    \"valor\": \"30000.00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/ufs/"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"id": "34011256-a030-4707-820b-4eded8f6b821",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Redes y conectividad\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/usuarios/6"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"id": "78ecdab4-94c0-4714-b40a-7d8807cf3069",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/usuarios/6"
+					},
+					"response": []
+				}
+			],
+			"id": "9f676dff-9df5-469b-8c0b-c5290a81889f"
+		},
+		{
+			"name": "Tecnico Categorias",
+			"item": [
+				{
+					"name": "Get All",
+					"id": "8fcd99f9-d18a-4880-8d90-0436b6370f31",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3020/api/tecnicocategorias/"
+					},
+					"response": []
+				},
+				{
+					"name": "New",
+					"id": "ab7f6004-ee8a-495c-8631-970178b7e491",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tecnico_id\": 3,\r\n    \"categoria_id\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/tecnicocategorias/"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"id": "86a7ebf3-4cef-4c60-9bf8-12e886b7d92b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Redes y conectividad\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/tecnicocategorias/6"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"id": "a9738dae-ecdd-4511-a3a6-8562bb02af05",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/tecnicocategorias/6"
+					},
+					"response": []
+				}
+			],
+			"id": "da6b3a75-f19b-4427-8f6f-32eec34837cc"
+		},
+		{
+			"name": "URL Soluciones",
+			"item": [
+				{
+					"name": "Get All",
+					"id": "71bdeb56-6242-4878-8a0d-6f259b9b8bdf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3020/api/urlsoluciones/"
+					},
+					"response": []
+				},
+				{
+					"name": "New",
+					"id": "c00b8c9b-3507-4bc3-801a-05d606ef0151",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tecnico_id\": 3,\r\n    \"categoria_id\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/tecnicocategorias/"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"id": "17b60e26-a8f2-4b61-8125-c884fb0ee97b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Redes y conectividad\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/tecnicocategorias/6"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"id": "4f41aca9-cdac-498d-9032-ee4421d53f57",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/tecnicocategorias/6"
+					},
+					"response": []
+				}
+			],
+			"id": "910014a8-182e-44d7-b133-825ef61e87d9"
+		},
+		{
+			"name": "Cliente Direcciones",
+			"item": [
+				{
+					"name": "Get All",
+					"id": "8999f1f8-d94c-44d2-8518-39276607f7dd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3020/api/urlsoluciones/"
+					},
+					"response": []
+				},
+				{
+					"name": "New",
+					"id": "1fb4d2b9-a48a-472c-9cc7-f24e81749c2b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tecnico_id\": 3,\r\n    \"categoria_id\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/tecnicocategorias/"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"id": "df43f325-b4ce-4df0-9e6a-73556722ae80",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Redes y conectividad\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/tecnicocategorias/6"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"id": "9c554855-cb99-4a35-889e-ee523258b54b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Enrique\",\r\n    \"email\": \"enrique.altamiros@gmail.com\",\r\n    \"contrasenia\": \"holahola\",\r\n    \"tipo_usuario\": \"administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3020/api/tecnicocategorias/6"
+					},
+					"response": []
+				}
+			],
+			"id": "91bf557c-8d38-456e-981c-45d3d48329a0"
+		}
+	]
+}
