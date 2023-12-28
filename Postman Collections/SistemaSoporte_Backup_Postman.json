@@ -468,7 +468,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:3020/api/tickets/"
+						"url": "{{Base_URL}}/tickets/"
 					},
 					"response": []
 				},
@@ -490,7 +490,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:3020/api/tickets/"
+						"url": "{{Base_URL}}/tickets/"
 					},
 					"response": []
 				},
@@ -512,7 +512,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:3020/api/estadotickets/6"
+						"url": "{{Base_URL}}/estadotickets/6"
 					},
 					"response": []
 				},
@@ -553,7 +553,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:3020/api/ciudades/"
+						"url": "{{Base_URL}}/ciudades/"
 					},
 					"response": []
 				},
@@ -638,7 +638,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:3020/api/paises/"
+						"url": "{{Base_URL}}/paises/"
 					},
 					"response": []
 				},
