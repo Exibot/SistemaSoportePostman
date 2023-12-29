@@ -906,7 +906,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:3020/api/categorias/"
+						"url": "{{Base_URL}}/categorias/"
 					},
 					"response": []
 				},
@@ -950,7 +950,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:3020/api/usuarios/6"
+						"url": "{{Base_URL}}/categorias/6"
 					},
 					"response": []
 				},
