@@ -1002,6 +1002,19 @@
 					"response": []
 				},
 				{
+					"name": "Get Specific",
+					"id": "1679c270-a5a0-48c5-8467-6ba065e31cdb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Base_URL}}/categorias/2"
+					},
+					"response": []
+				},
+				{
 					"name": "New",
 					"id": "268766a9-7080-4827-967e-ce6fb11c108d",
 					"protocolProfileBehavior": {
@@ -1083,6 +1096,32 @@
 						"method": "GET",
 						"header": [],
 						"url": "{{Base_URL}}/categorias/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific",
+					"id": "e5793ce9-1138-428e-9939-8ffd60a96c90",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Base_URL}}/ufs/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Copy",
+					"id": "0b7b6803-9c66-428d-adad-bb8caeaa20b6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Base_URL}}/ufs/2"
 					},
 					"response": []
 				},
@@ -1409,6 +1448,19 @@
 				}
 			],
 			"id": "91bf557c-8d38-456e-981c-45d3d48329a0"
+		},
+		{
+			"name": "Get Specific Copy",
+			"id": "3d46a3e3-ebe0-4c7c-9ffe-0e4c1b6121dd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{Base_URL}}/facturas/2"
+			},
+			"response": []
 		}
 	]
 }
