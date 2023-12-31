@@ -22,6 +22,19 @@
 					"response": []
 				},
 				{
+					"name": "Get Specific",
+					"id": "3720bf86-bd62-4dc7-9815-8ba50f195100",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Base_URL}}/usuarios/2"
+					},
+					"response": []
+				},
+				{
 					"name": "New",
 					"id": "974d8b7f-5139-4e9a-9458-84aad8ed0fab",
 					"protocolProfileBehavior": {
@@ -103,6 +116,19 @@
 						"method": "GET",
 						"header": [],
 						"url": "{{Base_URL}}/tarifas/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific",
+					"id": "d2e90fdf-b35b-486e-88d6-28d9fbebf069",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Base_URL}}/tarifas/2"
 					},
 					"response": []
 				},
@@ -290,6 +316,19 @@
 					"response": []
 				},
 				{
+					"name": "Get Specific",
+					"id": "6dbced32-da8d-432e-bc25-6df1e09c994e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Base_URL}}/clientes/2"
+					},
+					"response": []
+				},
+				{
 					"name": "New",
 					"id": "6e6897d1-14d4-4ba5-82f5-b0bf4a5e0b50",
 					"protocolProfileBehavior": {
@@ -371,6 +410,19 @@
 						"method": "GET",
 						"header": [],
 						"url": "{{Base_URL}}/estadotickets/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific",
+					"id": "e50b6474-6897-44cf-ba45-196f01b4be0c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Base_URL}}/estadotickets/2"
 					},
 					"response": []
 				},
@@ -468,7 +520,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{Base_URL}}/tickets/"
+						"url": "{{Base_URL}}/tickets/2"
 					},
 					"response": []
 				},
@@ -558,6 +610,19 @@
 					"response": []
 				},
 				{
+					"name": "Get Specific",
+					"id": "87b4357b-3578-43b4-bfec-da5ad7c872c0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Base_URL}}/ciudades/2"
+					},
+					"response": []
+				},
+				{
 					"name": "New",
 					"id": "49ccb8c4-0407-4b2d-a5ac-4c43877d55ca",
 					"protocolProfileBehavior": {
@@ -639,6 +704,19 @@
 						"method": "GET",
 						"header": [],
 						"url": "{{Base_URL}}/paises/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific",
+					"id": "1dfd7d97-e2de-4b80-aeac-1098969312b8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Base_URL}}/paises/2"
 					},
 					"response": []
 				},
@@ -972,7 +1050,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:3020/api/usuarios/6"
+						"url": "{{Base_URL}}/categorias/6"
 					},
 					"response": []
 				}
@@ -991,7 +1069,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:3020/api/categorias/"
+						"url": "{{Base_URL}}/categorias/"
 					},
 					"response": []
 				},
@@ -1076,7 +1154,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:3020/api/tecnicocategorias/"
+						"url": "{{Base_URL}}/tecnicocategorias/"
 					},
 					"response": []
 				},
@@ -1161,7 +1239,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:3020/api/urlsoluciones/"
+						"url": "{{Base_URL}}/urlsoluciones/"
 					},
 					"response": []
 				},
@@ -1246,7 +1324,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:3020/api/urlsoluciones/"
+						"url": "{{Base_URL}}/urlsoluciones/"
 					},
 					"response": []
 				},
