@@ -1113,19 +1113,6 @@
 					"response": []
 				},
 				{
-					"name": "Get Specific Copy",
-					"id": "0b7b6803-9c66-428d-adad-bb8caeaa20b6",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{Base_URL}}/ufs/2"
-					},
-					"response": []
-				},
-				{
 					"name": "New",
 					"id": "24c6fd8e-9931-4f67-8bd5-2e455926bf80",
 					"protocolProfileBehavior": {
@@ -1207,6 +1194,19 @@
 						"method": "GET",
 						"header": [],
 						"url": "{{Base_URL}}/tecnicocategorias/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific",
+					"id": "0b7b6803-9c66-428d-adad-bb8caeaa20b6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Base_URL}}/tecnicocategorias/2"
 					},
 					"response": []
 				},
