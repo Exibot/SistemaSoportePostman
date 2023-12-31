@@ -904,7 +904,7 @@
 					"response": []
 				},
 				{
-					"name": "Get Specific Copy",
+					"name": "Get Specific",
 					"id": "3e666d18-c03a-4625-a0a3-0f568907630a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
