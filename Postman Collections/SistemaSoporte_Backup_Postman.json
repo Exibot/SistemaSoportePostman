@@ -723,7 +723,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:3020/api/baseconocimientos/"
+						"url": "{{Base_URL}}/baseconocimientos/"
 					},
 					"response": []
 				},
@@ -736,7 +736,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:3020/api/baseconocimientos/2"
+						"url": "{{Base_URL}}/baseconocimientos/2"
 					},
 					"response": []
 				},
@@ -758,7 +758,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:3020/api/usuarios/"
+						"url": "{{Base_URL}}/baseconocimientos/"
 					},
 					"response": []
 				},
@@ -780,7 +780,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:3020/api/usuarios/6"
+						"url": "{{Base_URL}}/baseconocimientos/6"
 					},
 					"response": []
 				},
@@ -802,7 +802,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:3020/api/usuarios/6"
+						"url": "{{Base_URL}}/baseconocimientos/6"
 					},
 					"response": []
 				}
@@ -821,7 +821,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:3020/api/facturas/"
+						"url": "{{Base_URL}}/facturas/"
 					},
 					"response": []
 				},
@@ -843,7 +843,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:3020/api/facturas/"
+						"url": "{{Base_URL}}/facturas/"
 					},
 					"response": []
 				},
