@@ -1376,7 +1376,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{Base_URL}}/urlsoluciones/"
+						"url": "{{Base_URL}}/clientedirecciones/"
 					},
 					"response": []
 				},
