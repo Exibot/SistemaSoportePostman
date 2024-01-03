@@ -589,6 +589,18 @@
 						"url": "http://localhost:3020/api/estadotickets/6"
 					},
 					"response": []
+				},
+				{
+					"name": "Resumen Cliente con costo",
+					"id": "5be3c9d5-0a75-4cc7-bf87-72208e38db34",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "adb5a1a0-5ac0-4a9e-a011-cf73e6f18012"
