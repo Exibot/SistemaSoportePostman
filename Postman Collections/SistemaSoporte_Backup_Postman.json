@@ -1107,7 +1107,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{Base_URL}}/categorias/"
+						"url": "{{Base_URL}}/ufs/"
 					},
 					"response": []
 				},
