@@ -1135,7 +1135,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"dia\": 12,\r\n    \"mes\": 12,\r\n    \"anio\": 2023,\r\n    \"fecha\": \"2023-04-23T18:25:43.511Z\",\r\n    \"valor\": \"30000.00\"\r\n}",
+							"raw": "{\r\n    \"dia\": 1,\r\n    \"mes\": 1,\r\n    \"anio\": 2024,\r\n    \"fecha\": \"2024-01-01T18:25:43.511Z\",\r\n    \"valor\": 30000.00\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
