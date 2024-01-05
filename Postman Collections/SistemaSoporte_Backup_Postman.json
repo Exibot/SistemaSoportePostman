@@ -993,6 +993,18 @@
 						"url": "http://localhost:3020/api/facturas/6"
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "317690bf-bb2a-41ed-80d6-1a98b0681907",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "d3d01811-4953-4f29-9b19-c615266e42c3"
