@@ -598,7 +598,17 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"anio\": 2024,\r\n    \"mes\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{Base_URL}}/tickets/cliente/1/resumen"
 					},
 					"response": []
 				}
@@ -1147,7 +1157,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"dia\": 1,\r\n    \"mes\": 1,\r\n    \"anio\": 2024,\r\n    \"fecha\": \"2024-01-01T18:25:43.511Z\",\r\n    \"valor\": 30000.00\r\n}",
+							"raw": "{\r\n    \"dia\": 1,\r\n    \"mes\": 2,\r\n    \"anio\": 2024,\r\n    \"fecha\": \"2024-01-06T18:25:43.511Z\",\r\n    \"valor\": 30000.00\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
