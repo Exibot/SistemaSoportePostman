@@ -295,6 +295,19 @@
 						"url": "http://localhost:3020/api/usuarios/6"
 					},
 					"response": []
+				},
+				{
+					"name": "Reportes por Tickets",
+					"id": "d035c652-b852-4c3f-8759-55d56dca33c3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Base_URL}}/reportes/"
+					},
+					"response": []
 				}
 			],
 			"id": "e7215f98-c69f-4674-a6a1-05e06af97c54"
@@ -1012,7 +1025,8 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "{{Base_URL}}/facturas/resumenresueltos/1/1/2024"
 					},
 					"response": []
 				}
